@@ -1,5 +1,5 @@
 @echo off
-REM Compile code.c into code.exe, run it, then push changes
-// gcc code.c -o code.exe 
-code.exe
+REM Compile predict_the_winner.c into predict_the_winner.exe, run it, then push changes
+gcc predict_the_winner.c -o  .\predict_the_winner.exe
+predict_the_winner.exe
 

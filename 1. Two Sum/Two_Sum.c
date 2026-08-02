@@ -1,6 +1,7 @@
-#include <stdio.h>
-#include <stdlib.h>
 
-int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
-    
+#include <stdio.h>
+
+int main() {
+    printf("Hello, World!\n");
+    return 0;
 }

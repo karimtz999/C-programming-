@@ -34,27 +34,6 @@ bool predictTheWinner(int* nums, int numsSize) {
      * Fill the table for lengths = 2, 3, ..., up to numsSize.
      * ------------------------------------------------------------------------
      */
-    for (int len = 2; len <= numsSize; len++) { // Loop over sub-array lengths
-        for (int i = 0; i <= numsSize - len; i++) { // Starting index 'i'
-            
-            int j = i + len - 1; // Ending index 'j' based on length
-
-            // Choice 1: Take the left element (nums[i])
-            // Math: nums[i] - dp[i + 1][j]
-            int pickLeft = nums[i] - dp[i + 1][j];
-
-            // Choice 2: Take the right element (nums[j])
-            // Math: nums[j] - dp[i][j - 1]
-            int pickRight = nums[j] - dp[i][j - 1];
-
-            // Maximize score: Choose the move that yields a higher net score difference
-            if (pickLeft > pickRight) {
-                dp[i][j] = pickLeft;
-            } else {
-                dp[i][j] = pickRight;
-            }
-        }
-    }
 
     /* ------------------------------------------------------------------------
      * FINAL RESULT

@@ -1,5 +1,5 @@
 @echo off
-REM Compile predict_the_winner.c into predict_the_winner.exe, run it, then push changes
-gcc predict_the_winner.c -o  .\predict_the_winner.exe
-predict_the_winner.exe
+REM Compile Two_Sum.c into Two_Sum.exe, run it, then push changes
+gcc Two_Sum.c -o  .\Two_Sum.exe
+Two_Sum.exe
 

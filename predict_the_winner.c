@@ -4,7 +4,7 @@
 bool predictTheWinner(int* nums, int numsSize)
 {
     printf("%d\n", numsSize);
-    printf("%d\n", nums[1]);
+    printf("%d\n", nums[2]);
     return true;
 }
 

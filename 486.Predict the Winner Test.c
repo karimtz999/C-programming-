@@ -10,21 +10,7 @@
  */
 bool predictTheWinner(int* nums, int numsSize) {
 
-    /* ------------------------------------------------------------------------
-     * OPTIMIZATION RULE: EVEN LENGTH PROPERTY
-     * If the array length is even (numsSize % 2 == 0), Player 1 can ALWAYS win.
-     * 
-     * Proof/Logic:
-     * - Indices are divided into odd (1, 3, 5...) and even (0, 2, 4...).
-     * - Player 1 can calculate Sum(Even) and Sum(Odd) before making a move.
-     * - If Sum(Even) >= Sum(Odd), Player 1 can pick all even indices by always
-     *   selecting the even end. Player 2 is forced to pick odd indices.
-     * - Thus, for even length, return true immediately.
-     * ------------------------------------------------------------------------
-     */
-    if (numsSize % 2 == 0) {
-        return true;
-    }
+    
 
     /* ------------------------------------------------------------------------
      * DP TABLE DECLARATION

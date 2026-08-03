@@ -1,7 +1,14 @@
-class Solution {
+class Solution 
+
+{
 public:
-    string stoneGameIII(vector<int>& stoneValue) {
-        vector<vector<int>> dp;
-        int n;
+    string stoneGameIII(vector<int>& stoneValue)
+    {
+        n = stoneValue.size();
+        dp.assign(n, <int>(2, INT_MIN));
+
+        int result = dfs(0, 1, stoneValue);
+        if (result == 0) return "Tie";
+        return result > 0 ? "Alice" : "Bob";
     }
 };

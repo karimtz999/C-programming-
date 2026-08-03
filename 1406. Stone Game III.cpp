@@ -11,4 +11,5 @@ public:
         if (result == 0) return "Tie";
         return result > 0 ? "Alice" : "Bob";
     }
+private:
 };

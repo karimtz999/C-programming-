@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 
 void Two_Sum (int nums[], int target, int size)
@@ -17,8 +16,8 @@ void Two_Sum (int nums[], int target, int size)
 }
 int main()
 {
-    int nums[] = {2,7,11,15};
-    int target = 9;
+    int nums[] = {3,3};
+    int target = 6;
     int size = sizeof(nums) / sizeof(nums[0]);
     Two_Sum(nums, target, size);
     return 0;

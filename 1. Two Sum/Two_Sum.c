@@ -37,9 +37,21 @@ void insert(int key, int value)
 // Search for a number
 int search(int key)
 {
-    int index = hash(key);
+    int index = hash(key); // index = 11
 
     Node *current = hashTable[index];
+    /*
+    hashTable[11]
+      │
+      ▼
++------------+
+| key = 11   |
+| value = 2  |
+| next = NULL|
++------------+
+
+so current = hashTable[11] => current->key = 11, current->value = 2, current->next = NULL
+    */
 
     while (current != NULL)
     {

@@ -1,7 +1,6 @@
 class Solution:
     def remainingMethods(
-        self, n: int, k: int, invocations: List[List[int]]
-    ) -> List[int]:
+        self, n: int, k: int, invocations: List[List[int]]) -> List[int]:
         directed_graph = [[] for _ in range(n)]
         undirected_graph = [[] for _ in range(n)]
       

@@ -2,7 +2,6 @@ class Solution:
     def remainingMethods(
         self, n: int, k: int, invocations: List[List[int]]
     ) -> List[int]:
-        # Build adjacency lists for the graph
         directed_graph = [[] for _ in range(n)]
         undirected_graph = [[] for _ in range(n)]
       

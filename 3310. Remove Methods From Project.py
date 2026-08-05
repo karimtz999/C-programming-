@@ -14,7 +14,7 @@ class Solution:
             is_suspicious = [False] * n
       
         def mark_suspicious_methods(method_id: int) -> None:
-            """s
+            """
             DFS to mark all methods reachable from the buggy method as suspicious.
             These are methods that could be affected by the bug.
             """

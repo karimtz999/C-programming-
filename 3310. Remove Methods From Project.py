@@ -44,7 +44,7 @@ class Solution:
                     is_suspicious[connected_method] = False
                     unmark_connected_suspicious(connected_method)
       
-        # Check each non-suspicious method and unmark connected suspicious methods
+
         for method_id in range(n):
             if not is_suspicious[method_id] and not visited[method_id]:
                 unmark_connected_suspicious(method_id)

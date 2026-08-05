@@ -48,6 +48,4 @@ class Solution:
         for method_id in range(n):
             if not is_suspicious[method_id] and not visited[method_id]:
                 unmark_connected_suspicious(method_id)
-      
-        # Return all methods that are not suspicious (can remain in the system)
         return [method_id for method_id in range(n) if not is_suspicious[method_id]]

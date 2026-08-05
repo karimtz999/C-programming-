@@ -12,9 +12,7 @@ class Solution:
             directed_graph[caller].append(callee)
             undirected_graph[caller].append(callee)
             undirected_graph[callee].append(caller)
-      
-        # Track which methods are suspicious (potentially buggy)
-        is_suspicious = [False] * n
+            is_suspicious = [False] * n
       
         def mark_suspicious_methods(method_id: int) -> None:
             """
@@ -26,10 +24,7 @@ class Solution:
                 if not is_suspicious[next_method]:
                     mark_suspicious_methods(next_method)
       
-        # Mark all methods reachable from the buggy method k
         mark_suspicious_methods(k)
-      
-        # Track visited methods in the second DFS
         visited = [False] * n
       
         def unmark_connected_suspicious(method_id: int) -> None:

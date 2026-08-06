@@ -42,7 +42,5 @@ def main():
         answer = sol.smallestNumber(n, t)
         print(f"n = {n:3}, t = {t:2}  -->  {answer}")
 
-
-
 if __name__ == "__main__":
     main()

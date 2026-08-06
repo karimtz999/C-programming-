@@ -36,6 +36,7 @@ def main():
         (99, 10),
         (256, 12),
     ]
+    
     print("Testing smallestNumber()\n")
 
     for n, t in tests:

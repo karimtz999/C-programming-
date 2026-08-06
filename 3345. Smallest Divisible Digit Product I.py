@@ -37,10 +37,11 @@ def main():
         (256, 12),
     ]
     print("Testing smallestNumber()\n")
-    
+
     for n, t in tests:
         answer = sol.smallestNumber(n, t)
         print(f"n = {n:3}, t = {t:2}  -->  {answer}")
+
 
 
 if __name__ == "__main__":

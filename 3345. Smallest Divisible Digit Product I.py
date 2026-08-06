@@ -22,7 +22,6 @@ class Solution:
 
 def main():
     sol = Solution()
-
     # Test cases
     tests = [
         (10, 2),

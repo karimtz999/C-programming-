@@ -18,6 +18,7 @@ class Solution:
                 return candidate
 
 
+
 def main():
     sol = Solution()
     # Test cases

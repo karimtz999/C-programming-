@@ -1,4 +1,4 @@
-#include <stdio.h>
+ #include <stdio.h>
 
 int maxProduct(int* nums, int numsSize) {
     int first_max = 0, second_max = 0;

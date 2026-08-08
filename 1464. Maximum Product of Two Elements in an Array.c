@@ -12,7 +12,6 @@ int maxProduct(int* nums, int numsSize) {
         } else if (nums[i] > second_max) {
             second_max = nums[i];
         }
-        
     }
 
     

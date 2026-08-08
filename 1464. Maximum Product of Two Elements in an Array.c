@@ -16,6 +16,7 @@ int maxProduct(int* nums, int numsSize) {
     return (first_max - 1) * (second_max - 1);
 }
 
+
 // Example usage
 int main() {
     int nums[] = {2, 1, 5, 6, 2, 3};

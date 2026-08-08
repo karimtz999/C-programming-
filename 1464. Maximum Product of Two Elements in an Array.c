@@ -13,6 +13,7 @@ int maxProduct(int* nums, int numsSize) {
             second_max = nums[i];
         }
     }
+    
 
     return (first_max - 1) * (second_max - 1);
 }
